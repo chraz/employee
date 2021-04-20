@@ -7,11 +7,11 @@ phases:
   build:
     commands:
       - echo Build started on 
-      - mvn  -DskipTests clean package  
+      - mvn -DskipTests clean package  
   post_build:
     commands:
       - echo Build completed
-artifacts:
+  artifacts:
   files:
     - target/demo-0.0.1-SNAPSHOT.jar
   discard-paths: yes
