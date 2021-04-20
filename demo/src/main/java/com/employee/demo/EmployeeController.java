@@ -22,6 +22,17 @@ public class EmployeeController {
     @Autowired
 	private EmployeeRepository employeeRepository;
 
+    //Skapa en controllermetod (endpoint för '/')
+
+
+
+    @GetMapping(path="/")
+    @CrossOrigin()
+    String empty()
+    {
+        return "jepp";
+    }
+
     @GetMapping(path="/employee")
     @CrossOrigin()
     List<Employee> getAll(){
