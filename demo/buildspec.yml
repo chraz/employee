@@ -1,12 +1,12 @@
 version: 0.2
 
 phases:
-  pre_build:
+  pre-build:
     commands:
       - echo Entered prebuild phase
   build:
     commands:
-      - echo Build started on 
+      - echo Build again started on 
       - mvn -DskipTests clean package  
   post_build:
     commands:
