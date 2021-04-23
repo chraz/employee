@@ -23,9 +23,6 @@ public class EmployeeController {
 	private EmployeeRepository employeeRepository;
 
     //Skapa en controllermetod (endpoint för '/')
-
-
-
     @GetMapping(path="/")
     @CrossOrigin()
     String empty()
